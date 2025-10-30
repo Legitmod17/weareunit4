@@ -1,0 +1,24 @@
+#include <string>
+#include <iostream>
+using namespace std;
+
+int main() {
+    setlocale(0, "");
+    int num;
+    int answer;
+    cout << "Введите число";
+    cin >> num;
+    cout << "Решите пример " << endl;
+    cout << num << " * 1 = ? " << endl;
+    cout << "Ответ:";
+    cin >> answer;
+
+    if (answer != num * 1) {
+        cout << "\x1b[31mОтвет неправильный!\x1b[0m";
+            return 0;
+
+    }
+
+    cout << "\x1b[92mВы ответили правильно!\x1b[0m" << endl << endl;
+ 
+}
